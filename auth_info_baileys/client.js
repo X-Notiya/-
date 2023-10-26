@@ -23,7 +23,7 @@ try {
     console.log("Could not connect with Mongodb please provide accurate uri check video for more inofo❗\nhttps://youtu.be/7YWI50BDO5op")
     process.exit(0)
 }
-const { sck1, RandomXP, sck, plugindb, card } = require("../lib");
+const { sck1, RandomXP, sck, plugindb, card } = require("../auth_info_baileys");
 const chalk = require("chalk");
 const fetch = require("node-fetch");
 const axios = require("axios");
