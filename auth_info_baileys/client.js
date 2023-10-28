@@ -28,7 +28,7 @@ const chalk = require("chalk");
 const fetch = require("node-fetch");
 const axios = require("axios");
 const moment = require("moment-timezone");
-let { isUrl, sleep, getBuffer, format, parseMention, getRandom, fancy, randomfancy, botpic, tlang } = require("../lib");
+let { isUrl, sleep, getBuffer, format, parseMention, getRandom, fancy, randomfancy, botpic, tlang } = require("../auth_info_baileys");
 const { smsg } = require('../auth_info_baileys/myfuncn')
 const { formatp, formatDate, getTime, clockString, runtime, fetchJson, jsonformat, GIFBufferToVideoBuffer, getSizeMedia, generateMessageTag, fancytext } = require('../auth_info_baileys')
 const speedofbot = require("performance-now");
@@ -81,9 +81,9 @@ setTimeout(() => {
     const msgRetryCounterMap = MessageRetryMap || {}
     async function syncdb() {
         let thumbbuffer = await getBuffer(THUMB_IMAGE)
-        const ChangePic = __dirname + "/assets/SocialLogo.png"
+        const ChangePic = __dirname + "../DarkQueen-Media/DarkQueen-info.jpg"
         await writeFile(ChangePic, thumbbuffer);
-        global.log0 = fs.readFileSync(__dirname + "/assets/SocialLogo.png"); //ur logo pic
+        global.log0 = fs.readFileSync(__dirname + "../DarkQueen-Media/DarkQueen-info.jpg"); //ur logo pic
         const { state, saveCreds } = await useMultiFileAuthState(__dirname + '../auth_info_baileys/')
         const Void = VoidConnect({
             logger: pino({ level: 'fatal' }),
