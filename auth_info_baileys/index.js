@@ -138,8 +138,8 @@ const { cmd, commands } = require(__dirname + '/plugins')
 const { chatbot } = require(__dirname+'../public/chatbot')
 module.exports = {
     sck,
-    DaekQueen.cmd,
-    DarkQueen.commands,
+    DaekQueencmd,
+    DarkQueencommands,
     chatbot,
     sck1,
     RandomXP,
