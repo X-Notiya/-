@@ -8,7 +8,7 @@ const {
 writeExifWebp,
   imageToWebp,
   videoToWebp,
-} = require("../lib/exif");
+} = require("../auth_info_baileys/exif");
 const moment = require('moment-timezone')
 const { sizeFormatter } = require('human-readable')
 const Config = require('../config')
