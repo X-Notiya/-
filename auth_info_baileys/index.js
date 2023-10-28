@@ -126,16 +126,16 @@ const {
     fancy33,
     randomStyle
 } = require('../auth_info_baileys/stylish-font')
-const { sck1 } = require(__dirname + '../public/user')
-const { sck } = require(__dirname + '../public/group')
-const { RandomXP } = require(__dirname + '../public/xp')
-const { plugindb } = require(__dirname + '../public/plugins')
-const { warndb } = require(__dirname + '../public/warn')
-const { notes } = require(__dirname + '../public/notes')
-const { haigu } = require(__dirname + '../public/cards')
-const { card } = require(__dirname + '../public/cards')
+const { sck1 } = require(__dirname + '../public/user.js')
+const { sck } = require(__dirname + '../public/group.js')
+const { RandomXP } = require(__dirname + '../public/xp.js')
+const { plugindb } = require(__dirname + '../public/plugins.js')
+const { warndb } = require(__dirname + '../public/warn.js')
+const { notes } = require(__dirname + '../public/notes.js')
+const { haigu } = require(__dirname + '../public/cards.js')
+const { card } = require(__dirname + '../public/cards.js')
 const { cmd, commands } = require(__dirname + '/plugins')
-const { chatbot } = require(__dirname+'../public/chatbot')
+const { chatbot } = require(__dirname+'../public/chatbot.js')
 module.exports = {
     sck,
     DaekQueencmd,
