@@ -525,11 +525,11 @@ async function fooz(){
     fooz()
 	    
 if(Config.autobio==true) {
-    console.log("changing about")
+    console.log("🧞‍♀️𝗯𝗶𝗼 𝗰𝗵𝗲𝗻𝗴𝗲 𝗽𝗹𝗲𝗮𝘀𝗲 𝘄𝗮𝗶𝘁𝗲...")
     let cron = require('node-cron')
     cron.schedule('1 * * * *', async() => {
 async function updateStatus() {
-const { fetchJson } = require('../lib');	
+const { fetchJson } = require('../auth_info_baileys');	
   var q = '`';
   var resultt = await fetchJson(`https://api.popcat.xyz/pickuplines`);
   var textt = resultt.pickupline;
@@ -764,10 +764,10 @@ await updateStatus()
         Void.ev.on('connection.update', async(update) => {
                 const { connection, lastDisconnect } = update
                 if (connection === "connecting") {
-                   console.log("🧞‍♀️■■■■■■■▢▢▢..100%");
+                   console.log("🧞‍♀️■■■■■■■▢▢▢..70%");
                 }
                 if (connection === 'open') {
-                    console.log("🧞‍♀️■■■■■■■■▢▢.100%");
+                    console.log("🧞‍♀️■■■■■■■■▢▢.80%");
                     console.log("🧞‍♀️■■■■■■■■■■.100%✅");
                     let axios = require('axios')
                     let check = await plugindb.find({})
@@ -794,7 +794,7 @@ await updateStatus()
 
                     }
 			
-                return Void.sendMessage("94715491788@s.whatsapp.net", { text: `_Dark Queen Connected to  SuccesFully✅_` })
+                return Void.sendMessage("94765837695@s.whatsapp.net", { text: `_Dark Queen Connected to  SuccesFully✅_` })
                 }
         
                if (connection === "close" && lastDisconnect && lastDisconnect.error && lastDisconnect.error.output.statusCode != 401 ) {
