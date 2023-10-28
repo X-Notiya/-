@@ -125,21 +125,21 @@ const {
     fancy32,
     fancy33,
     randomStyle
-} = require('../auth_info_baileys/stylish-font')
-const { sck1 } = require(__dirname + '../public/user.js')
-const { sck } = require(__dirname + '../public/group.js')
-const { RandomXP } = require(__dirname + '../public/xp.js')
-const { plugindb } = require(__dirname + '../public/plugins.js')
-const { warndb } = require(__dirname + '../public/warn.js')
-const { notes } = require(__dirname + '../public/notes.js')
-const { haigu } = require(__dirname + '../public/cards.js')
-const { card } = require(__dirname + '../public/cards.js')
-const { cmd, commands } = require(__dirname + '/plugins')
-const { chatbot } = require(__dirname+'../public/chatbot.js')
+} = require('./stylish-font')
+const { sck1 } = require(__dirname + '/database/user')
+const { sck } = require(__dirname + '/database/group')
+const { RandomXP } = require(__dirname + '/database/xp')
+const { plugindb } = require(__dirname + '/database/plugins')
+const { warndb } = require(__dirname + '/database/warn')
+const { notes } = require(__dirname + '/database/notes')
+const { haigu } = require(__dirname + '/database/cards')
+const { card } = require(__dirname + '/database/cards')
+const { cmd, commands } = require(__dirname + '/commands')
+const { chatbot } = require(__dirname+'/database/chatbot')
 module.exports = {
     sck,
-    DaekQueencmd,
-    DarkQueencommands,
+    darkcmd,
+    DarkQueenCMD,
     chatbot,
     sck1,
     RandomXP,
