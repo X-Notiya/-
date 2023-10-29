@@ -32,7 +32,7 @@ let { isUrl, sleep, getBuffer, format, parseMention, getRandom, fancy, randomfan
 const { smsg } = require('../auth_info_baileys/myfuncn')
 const { formatp, formatDate, getTime, clockString, runtime, fetchJson, jsonformat, GIFBufferToVideoBuffer, getSizeMedia, generateMessageTag, fancytext } = require('../auth_info_baileys')
 const speedofbot = require("performance-now");
-global.db = JSON.parse(fs.readFileSync(__dirname + "../auth_info_baileys/database.json"));
+global.db = JSON.parse(fs.readFileSync(__dirname + "/database.json"));
 var CryptoJS = require("crypto-js");
 var prefixRegex = Config.prefix === "false" || Config.prefix === "null" ? "^" : new RegExp('^[' + Config.HANDLERS + ']');
 let cc = Config.sessionName.replace(/𝐃𝐚𝐫𝐤_𝐐𝐮𝐞𝐞𝐧_𝐌𝐃-𝐕2;;;/g, "");
