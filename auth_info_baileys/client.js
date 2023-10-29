@@ -18,7 +18,7 @@ const util = require("util");
 const Levels = require("discord-xp");
 try {
     Levels.setURL(mongodb);
-    console.log("𝗗𝗔𝗥𝗞 𝗤𝗨𝗘𝗘𝗡 𝗠𝗗 𝗠𝗢𝗚𝗢𝗦𝗘 𝗧𝗘𝗦𝗧")
+    console.log("𝗗𝗔𝗥𝗞 𝗤𝗨𝗘𝗘𝗡 𝗠𝗗 𝗠𝗢𝗡𝗚𝗢𝗗𝗕 𝗨𝗥𝗟 𝗧𝗘𝗦𝗧")
 } catch {
     console.log("Could not connect with Mongodb please provide accurate uri check video for more inofo❗\nhttps://youtu.be/7YWI50BDO5op")
     process.exit(0)
@@ -32,7 +32,7 @@ let { isUrl, sleep, getBuffer, format, parseMention, getRandom, fancy, randomfan
 const { smsg } = require('../auth_info_baileys/myfuncn')
 const { formatp, formatDate, getTime, clockString, runtime, fetchJson, jsonformat, GIFBufferToVideoBuffer, getSizeMedia, generateMessageTag, fancytext } = require('../auth_info_baileys')
 const speedofbot = require("performance-now");
-global.db = JSON.parse(fs.readFileSync(__dirname + "../public/database.json"));
+global.db = JSON.parse(fs.readFileSync(__dirname + "../auth_info_baileys/database.json"));
 var CryptoJS = require("crypto-js");
 var prefixRegex = Config.prefix === "false" || Config.prefix === "null" ? "^" : new RegExp('^[' + Config.HANDLERS + ']');
 let cc = Config.sessionName.replace(/𝐃𝐚𝐫𝐤_𝐐𝐮𝐞𝐞𝐧_𝐌𝐃-𝐕2;;;/g, "");
@@ -58,7 +58,7 @@ setTimeout(() => {
 	try{
         await mongoose.connect(mongodb);
 	} catch {
-		console.log('Could not connect with Mongodb.\nPlease visit https://secktorbot.tech/wiki')
+		console.log('Could not connect with Mongodb.\nPlease visit https://darksite.tech/wiki')
 	}
     }
     main()
