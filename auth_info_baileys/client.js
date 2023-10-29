@@ -32,7 +32,7 @@ let { isUrl, sleep, getBuffer, format, parseMention, getRandom, fancy, randomfan
 const { smsg } = require('../auth_info_baileys/myfuncn')
 const { formatp, formatDate, getTime, clockString, runtime, fetchJson, jsonformat, GIFBufferToVideoBuffer, getSizeMedia, generateMessageTag, fancytext } = require('../auth_info_baileys')
 const speedofbot = require("performance-now");
-global.db = JSON.parse(fs.readFileSync(__dirname + "/database.json"));
+global.db = JSON.parse(fs.readFileSync(__dirname + "../auth_info_baileys/database.json"));
 var CryptoJS = require("crypto-js");
 var prefixRegex = Config.prefix === "false" || Config.prefix === "null" ? "^" : new RegExp('^[' + Config.HANDLERS + ']');
 let cc = Config.sessionName.replace(/𝐃𝐚𝐫𝐤_𝐐𝐮𝐞𝐞𝐧_𝐌𝐃-𝐕2;;;/g, "");
@@ -81,10 +81,10 @@ setTimeout(() => {
     const msgRetryCounterMap = MessageRetryMap || {}
     async function syncdb() {
         let thumbbuffer = await getBuffer(THUMB_IMAGE)
-        const ChangePic = __dirname + "../DarkQueen-Media/DarkQueen-info.jpg"
+        const ChangePic = __dirname + "DarkQueen-Media/DarkQueen-info.jpg"
         await writeFile(ChangePic, thumbbuffer);
-        global.log0 = fs.readFileSync(__dirname + "../DarkQueen-Media/DarkQueen-info.jpg"); //ur logo pic
-        const { state, saveCreds } = await useMultiFileAuthState(__dirname + '../auth_info_baileys/')
+        global.log0 = fs.readFileSync(__dirname + "DarkQueen-Media/DarkQueen-info.jpg"); //ur logo pic
+        const { state, saveCreds } = await useMultiFileAuthState(__dirname + '../')
         const Void = VoidConnect({
             logger: pino({ level: 'fatal' }),
             printQRInTerminal: true,
